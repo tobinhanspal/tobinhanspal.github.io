@@ -166,6 +166,7 @@ a:hover, a:focus { color: var(--link-hover); text-decoration: underline; }
 .paper-title .paper-link:focus { color: var(--link); text-decoration: underline; }
 
 .paper-meta { margin: 0; font-size: 14.5px; color: var(--muted); }
+.paper-meta .coauthors { color: var(--muted); }
 .paper-meta .venue em { color: var(--text); font-style: italic; }
 .paper-meta .status,
 .paper-meta .note { font-style: italic; }
