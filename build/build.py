@@ -136,6 +136,16 @@ SIDEBAR = """  <header class="sidebar">
       Network Member, <a href="https://cepr.org/research/research-policy-networks/household-finance" target="_blank" rel="noopener">CEPR Household Finance Research Policy Network</a>
     </p>
     <p class="cv"><a class="btn" href="files/cv.pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a></p>
+    <p class="logos">
+      <a href="https://www.wu.ac.at/en/finance/people/faculty/tobin-hanspal" target="_blank" rel="noopener">
+        <img class="logo logo-wu" src="assets/img/logo-wu.svg" width="71" height="38"
+             alt="WU Vienna University of Economics and Business" loading="lazy">
+      </a>
+      <a href="https://www.vgsf.ac.at/" target="_blank" rel="noopener">
+        <img class="logo logo-vgsf" src="assets/img/logo-vgsf.svg" width="95" height="24"
+             alt="Vienna Graduate School of Finance" loading="lazy">
+      </a>
+    </p>
     <h2 class="side-h">Contact</h2>
     <p class="contact">
       <a href="mailto:tobin.hanspal@wu.ac.at">tobin.hanspal@wu.ac.at</a><br>

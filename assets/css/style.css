@@ -123,6 +123,34 @@ a:hover, a:focus { color: var(--link-hover); text-decoration: underline; }
 .contact { margin: 0 0 10px; font-size: 13px; line-height: 1.45; }
 .address { margin: 0 0 16px; font-size: 12px; color: var(--muted); line-height: 1.45; }
 
+/* Institution logos */
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 0 0 18px;
+  padding-top: 2px;
+}
+.logos a { display: inline-flex; line-height: 0; }
+.logos a:hover, .logos a:focus { text-decoration: none; }
+
+.logo {
+  display: block;
+  width: auto;
+  opacity: 0.78;
+  transition: opacity 0.16s ease;
+}
+.logos a:hover .logo, .logos a:focus .logo { opacity: 1; }
+
+.logo-wu { height: 38px; }
+.logo-vgsf { height: 24px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .logo { transition: none; }
+}
+
 /* ---------- Content ---------- */
 
 .toolbar { margin: 0 0 16px; }
