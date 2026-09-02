@@ -56,12 +56,17 @@ listed key and set that key on the paper in `build/papers.py`, then rebuild.
 | Political Corruption, Trust, and Household Stock Market Participation | `corruption` |
 | Does Financial Technology Affect Household Savings Behavior? | `fintech-savings` |
 
-## Adding the portrait
+## Portrait
 
-Google blocks direct downloads of the image hosted on the old Google Site, so
-the portrait is not included. Save any portrait as `assets/img/photo.jpg` and it
-appears automatically. Until then the page hides the image rather than showing a
-broken icon.
+`assets/img/photo.jpg` is the full frame from the 2018 shoot, resized to 540px
+wide and saved as an optimised JPEG (21 KB, down from a 1.3 MB PNG source).
+
+`assets/img/photo-portrait.jpg` is an alternative crop that trims the empty
+left third so the face fills more of the sidebar. To use it instead, change
+the `src` on the `.portrait` image in `build/build.py` (the `SIDEBAR` block)
+and rerun `python build/build.py`, or edit the two HTML files directly.
+
+Source file: `Dropbox/Personal/ProPhoto_2018/PicturePeopleMyZeil-3_retouch.png`
 
 ## Local preview
 
