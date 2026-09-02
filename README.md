@@ -7,7 +7,7 @@ repository root as-is (`.nojekyll` disables Jekyll processing).
 ## Layout
 
 ```
-index.html            Research page (working papers, publications, resting papers)
+index.html            Research page (current research, publications, resting papers)
 survey.html           Appendix materials for the REStat COVID-19 paper
 assets/css/style.css  All styling
 assets/img/photo.jpg  Portrait (see "Adding the portrait" below)

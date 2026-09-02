@@ -63,7 +63,7 @@ a:hover, a:focus { color: var(--link-hover); text-decoration: underline; }
 
 .sidebar { position: sticky; top: 32px; }
 
-.content { min-width: 0; padding-bottom: 44px; }
+.content { min-width: 0; padding-top: 30px; padding-bottom: 44px; }
 
 /* ---------- Sidebar ---------- */
 
@@ -180,7 +180,7 @@ a:hover, a:focus { color: var(--link-hover); text-decoration: underline; }
 
 .paper-meta { margin: 0; font-size: 13px; line-height: 1.42; color: var(--muted); }
 .paper-meta .coauthors { color: var(--muted); }
-.paper-meta .venue em { color: var(--text); font-style: italic; }
+.paper-meta .venue em { color: var(--heading); font-weight: 700; font-style: italic; }
 .paper-meta .status,
 .paper-meta .note { font-style: italic; }
 .paper-meta a { color: var(--link); }
@@ -288,7 +288,7 @@ a:hover, a:focus { color: var(--link-hover); text-decoration: underline; }
     border-bottom: 1px solid var(--rule);
   }
   .portrait { max-width: 150px; }
-  .content { padding-bottom: 30px; }
+  .content { padding-top: 0; padding-bottom: 30px; }
 }
 
 @media (max-width: 480px) {

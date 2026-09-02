@@ -180,7 +180,7 @@ def build_index():
     parts = [HEAD.format(title="Tobin Hanspal", desc=INDEX_DESC, canon="")]
     parts.append(SIDEBAR)
     parts.append('  <main id="main" class="content">\n')
-    parts.append(section("working-papers", "Working Papers", WORKING))
+    parts.append(section("current-research", "Current Research", WORKING))
     parts.append(section("publications", "Publications", PUBLICATIONS))
     parts.append(section("resting-papers", "Resting Papers", RESTING))
     parts.append(FOOT.format(year=2026))
