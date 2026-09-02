@@ -153,21 +153,6 @@ a:hover, a:focus { color: var(--link-hover); text-decoration: underline; }
 
 /* ---------- Content ---------- */
 
-.toolbar { margin: 0 0 16px; }
-
-#toggle-abstracts {
-  font: inherit;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 5px 11px;
-  border: 1px solid var(--rule);
-  border-radius: 4px;
-  background: var(--panel);
-  color: var(--heading);
-  cursor: pointer;
-}
-#toggle-abstracts:hover { border-color: var(--link); color: var(--link); }
-
 .content section { margin: 0 0 28px; }
 
 .content h2 {
@@ -319,7 +304,7 @@ a:hover, a:focus { color: var(--link-hover); text-decoration: underline; }
   body { font-size: 10.5pt; color: #000; }
   .wrapper { display: block; max-width: none; padding: 0; }
   .sidebar { position: static; }
-  .toolbar, .skip-link, .btn { display: none; }
+  .skip-link, .btn { display: none; }
   .paper { padding: 8px 0; }
   .abstract-body { background: none; border-left: 1px solid #ccc; }
   .abstract[open] > summary::before { transform: none; }

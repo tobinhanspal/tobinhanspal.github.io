@@ -10,7 +10,6 @@ repository root as-is (`.nojekyll` disables Jekyll processing).
 index.html            Research page (working papers, publications, resting papers)
 survey.html           Appendix materials for the REStat COVID-19 paper
 assets/css/style.css  All styling
-assets/js/main.js     Expand/collapse-all control for abstracts
 assets/img/photo.jpg  Portrait (see "Adding the portrait" below)
 files/cv.pdf          CV
 files/oappendix.pdf   Online appendix
@@ -21,9 +20,9 @@ build/                Optional generator, see "Editing content"
 ## Abstracts
 
 Each abstract is a native HTML `<details>` element, so clicking "Abstract"
-unrolls it. This works with JavaScript disabled, is keyboard accessible, and
-prints correctly. `assets/js/main.js` only adds the "Expand all abstracts"
-button on top of that.
+unrolls it. The site ships no JavaScript at all: the disclosure behaviour is
+the browser's own, which means it works with scripting disabled, is keyboard
+accessible, and prints correctly.
 
 ## Editing content
 

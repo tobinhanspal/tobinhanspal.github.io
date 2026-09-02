@@ -56,7 +56,9 @@ def paper_html(p):
     a = authors_html(p.get("authors"))
     if a:
         meta.append(a)
-    if p.get("journal"):
+    if p.get("journal") and p.get("forthcoming"):
+        meta.append('<span class="venue">Forthcoming, <em>%s</em></span>' % e(p["journal"]))
+    elif p.get("journal"):
         meta.append('<span class="venue"><em>%s</em> (%s)</span>' % (e(p["journal"]), p["year"]))
     if p.get("status"):
         meta.append('<span class="status">%s</span>' % e(p["status"]))
@@ -166,7 +168,6 @@ FOOT = """  </main>
 <footer class="site-footer">
   <div class="wrapper"><small>&copy; {year} Tobin Hanspal</small></div>
 </footer>
-<script src="assets/js/main.js" defer></script>
 </body>
 </html>
 """
@@ -179,9 +180,6 @@ def build_index():
     parts = [HEAD.format(title="Tobin Hanspal", desc=INDEX_DESC, canon="")]
     parts.append(SIDEBAR)
     parts.append('  <main id="main" class="content">\n')
-    parts.append('    <div class="toolbar">'
-                 '<button type="button" id="toggle-abstracts" aria-pressed="false">'
-                 'Expand all abstracts</button></div>')
     parts.append(section("working-papers", "Working Papers", WORKING))
     parts.append(section("publications", "Publications", PUBLICATIONS))
     parts.append(section("resting-papers", "Resting Papers", RESTING))
