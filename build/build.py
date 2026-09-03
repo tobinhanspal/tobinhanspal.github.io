@@ -99,8 +99,15 @@ def paper_html(p):
     )
 
 
-def section(sid, heading, items, ordered=False):
-    if ordered:
+def section(sid, heading, items, ordered=False, bullets=False):
+    if bullets:
+        inner = "".join(
+            '\n        <li>%s\n        </li>'
+            % paper_html(p).replace("\n      ", "\n          ")
+            for p in items)
+        body = ('\n      <ul class="paper-list paper-list--bullet">%s'
+                '\n      </ul>' % inner)
+    elif ordered:
         # <ol reversed> numbers the oldest paper 1 and the newest highest,
         # while the list still reads newest first down the page
         inner = "".join(
@@ -195,9 +202,9 @@ def build_index():
     parts = [HEAD.format(title="Tobin Hanspal", desc=INDEX_DESC, canon="", noindex=NOINDEX_TAG)]
     parts.append(SIDEBAR)
     parts.append('  <main id="main" class="content">\n')
-    parts.append(section("current-research", "Current Research", WORKING))
+    parts.append(section("current-research", "Current Research", WORKING, bullets=True))
     parts.append(section("publications", "Publications", PUBLICATIONS, ordered=True))
-    parts.append(section("resting-papers", "Resting Papers", RESTING))
+    parts.append(section("resting-papers", "Resting Papers", RESTING, bullets=True))
     parts.append(FOOT.format(year=2026))
     return "".join(parts)
 

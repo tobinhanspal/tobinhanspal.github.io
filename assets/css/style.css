@@ -183,6 +183,12 @@ a:hover, a:focus { color: var(--link-hover); text-decoration: underline; }
   font-size: 12px;
   font-weight: 700;
 }
+.paper-list--bullet { list-style: disc; }
+.paper-list--bullet > li::marker {
+  color: var(--rule);
+  font-size: 10px;
+  font-weight: 400;
+}
 .paper-list > li > .paper { border-bottom: 1px solid #f2f2f2; }
 .paper-list > li:last-child > .paper { border-bottom: none; padding-bottom: 2px; }
 
