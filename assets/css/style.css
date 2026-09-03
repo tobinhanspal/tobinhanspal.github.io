@@ -243,6 +243,10 @@ a:hover, a:focus { color: var(--link-hover); text-decoration: underline; }
   font-size: 13px;
   line-height: 1.5;
   color: #333;
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
   animation: unroll 0.2s ease;
 }
 .abstract-body p { margin: 0; }
