@@ -160,10 +160,11 @@ a:hover, a:focus { color: var(--link-hover); text-decoration: underline; }
 .content h2 {
   margin: 0 0 2px;
   padding-bottom: 5px;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid rgba(138, 90, 28, 0.28);
   font-size: 18px;
   font-weight: 700;
-  color: var(--heading);
+  letter-spacing: 0.2px;
+  color: var(--accent);
 }
 
 .paper { padding: 11px 0; border-bottom: 1px solid #f2f2f2; }
