@@ -63,16 +63,16 @@ a:hover, a:focus { color: var(--link-hover); text-decoration: underline; }
 
 .sidebar { position: sticky; top: 32px; }
 
-.content { min-width: 0; padding-top: 30px; padding-bottom: 44px; }
+.content { min-width: 0; padding-top: 40px; padding-bottom: 44px; }
 
 /* ---------- Sidebar ---------- */
 
 .name {
   margin: 0 0 13px;
-  font-size: 27px;
-  line-height: 1.15;
-  font-weight: 700;
-  letter-spacing: -0.4px;
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: -0.5px;
   color: var(--heading);
 }
 .name a { color: inherit; }
@@ -296,7 +296,7 @@ a:hover, a:focus { color: var(--link-hover); text-decoration: underline; }
 @media (max-width: 480px) {
   body { font-size: 14.5px; }
   .wrapper { padding-left: 18px; padding-right: 18px; }
-  .name { font-size: 24px; }
+  .name { font-size: 26px; }
   .content h2 { font-size: 17px; }
 }
 
