@@ -44,15 +44,13 @@ This rewrites `index.html` and `survey.html`. A paper with no matching key in
 
 ## Abstracts still to add
 
-Five papers have no publicly retrievable abstract, so they currently render
+Three papers have no abstract on file, so they currently render
 without a toggle. To add one, put the text in `build/abstracts.json` under the
 listed key and set that key on the paper in `build/papers.py`, then rebuild.
 
 | Paper | Suggested key |
 | --- | --- |
-| Binary Bias and Stock Returns | `binary-bias` |
 | Do Financial Misconduct Experiences Spur White-Collar Crime? | `misconduct` |
-| Beliefs and the Disposition Effect | `disposition` |
 | Political Corruption, Trust, and Household Stock Market Participation | `corruption` |
 | Does Financial Technology Affect Household Savings Behavior? | `fintech-savings` |
 

@@ -20,7 +20,7 @@ P = {
 }
 
 WORKING = [
-    dict(key=None, title="Binary Bias and Stock Returns",
+    dict(key="binary-bias", title="Binary Bias and Stock Returns",
          authors=[("Felix Fattinger", None), ("Borys Koval", None), ("Alina Steshkova", None)],
          note="Coming soon."),
     dict(key="gamblers", title="Do Gamblers Invest in Lottery Stocks?",

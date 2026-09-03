@@ -91,6 +91,8 @@ a:hover, a:focus { color: var(--link-hover); text-decoration: underline; }
 .role a { font-weight: 700; }
 
 .affil { margin: 0 0 15px; font-size: 12.5px; line-height: 1.45; color: var(--muted); }
+.affil span { display: block; }
+.affil span + span { margin-top: 7px; }
 .affil a { color: var(--link); }
 
 .cv { margin: 0 0 18px; }

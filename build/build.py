@@ -137,9 +137,9 @@ SIDEBAR = """  <header class="sidebar">
       <a href="https://www.wu.ac.at/en/finance/people/faculty/tobin-hanspal" target="_blank" rel="noopener">WU Vienna University of Economics and Business</a>
     </p>
     <p class="affil">
-      Faculty Member, <a href="https://www.vgsf.ac.at/" target="_blank" rel="noopener">Vienna Graduate School of Finance</a> (VGSF)<br>
-      Research Affiliate, Leibniz Institute for Financial Research SAFE<br>
-      Network Member, <a href="https://cepr.org/research/research-policy-networks/household-finance" target="_blank" rel="noopener">CEPR Household Finance Research Policy Network</a>
+      <span>Faculty Member, <a href="https://www.vgsf.ac.at/" target="_blank" rel="noopener">Vienna Graduate School of Finance</a> (VGSF)</span>
+      <span>Research Affiliate, Leibniz Institute for Financial Research SAFE</span>
+      <span>Network Member, <a href="https://cepr.org/research/research-policy-networks/household-finance" target="_blank" rel="noopener">CEPR Household Finance Research Policy Network</a></span>
     </p>
     <p class="cv"><a class="btn" href="files/cv.pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a></p>
     <p class="logos">
