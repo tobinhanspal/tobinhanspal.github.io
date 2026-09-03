@@ -1,0 +1,12 @@
+# Crawlers are deliberately ALLOWED to fetch this site.
+#
+# The pages carry <meta name="robots" content="noindex, nofollow">, and a
+# crawler has to be able to read a page in order to honour that. Blocking
+# with "Disallow: /" here would hide the noindex and could leave a bare URL
+# indexed anyway, which is the opposite of what we want.
+#
+# To go live in search results: set NOINDEX = False in build/build.py,
+# rerun the build, and delete this file.
+
+User-agent: *
+Allow: /

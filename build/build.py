@@ -13,6 +13,10 @@ sys.path.insert(0, os.path.join(ROOT, "build"))
 from papers import WORKING, PUBLICATIONS, RESTING  # noqa: E402
 
 ABS = json.load(open(os.path.join(ROOT, "build", "abstracts.json"), encoding="utf-8"))
+
+# Set to False when you are ready for the site to be indexed by search engines.
+# See README, "Keeping the site out of search results".
+NOINDEX = True
 e = H.escape
 
 
@@ -110,7 +114,7 @@ HEAD = """<!doctype html>
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <meta name="author" content="Tobin Hanspal">
-<link rel="canonical" href="https://tobinhanspal.github.io/{canon}">
+{noindex}<link rel="canonical" href="https://tobinhanspal.github.io/{canon}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
@@ -172,12 +176,14 @@ FOOT = """  </main>
 </html>
 """
 
+NOINDEX_TAG = ('<meta name="robots" content="noindex, nofollow">\n' if NOINDEX else "")
+
 INDEX_DESC = ("Tobin Hanspal, Associate Professor of Finance at WU Vienna. Research in household "
               "finance, investor behavior, and the effect of personal experiences on financial decisions.")
 
 
 def build_index():
-    parts = [HEAD.format(title="Tobin Hanspal", desc=INDEX_DESC, canon="")]
+    parts = [HEAD.format(title="Tobin Hanspal", desc=INDEX_DESC, canon="", noindex=NOINDEX_TAG)]
     parts.append(SIDEBAR)
     parts.append('  <main id="main" class="content">\n')
     parts.append(section("current-research", "Current Research", WORKING))
@@ -209,7 +215,7 @@ SURVEY_DESC = ("Online appendix and survey instructions for Exposure to the COVI
 
 def build_survey():
     parts = [HEAD.format(title="Appendix Materials - Tobin Hanspal",
-                         desc=SURVEY_DESC, canon="survey.html")]
+                         desc=SURVEY_DESC, canon="survey.html", noindex=NOINDEX_TAG)]
     parts.append(SIDEBAR)
     parts.append(SURVEY_BODY)
     parts.append(FOOT.format(year=2026))

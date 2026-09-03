@@ -8,6 +8,7 @@ repository root as-is (`.nojekyll` disables Jekyll processing).
 
 ```
 index.html            Research page (current research, publications, resting papers)
+robots.txt            Crawler policy, see "Keeping the site out of search results"
 survey.html           Appendix materials for the REStat COVID-19 paper
 assets/css/style.css  All styling
 assets/img/photo.jpg  Portrait (see "Adding the portrait" below)
@@ -66,6 +67,23 @@ the `src` on the `.portrait` image in `build/build.py` (the `SIDEBAR` block)
 and rerun `python build/build.py`, or edit the two HTML files directly.
 
 Source file: `Dropbox/Personal/ProPhoto_2018/PicturePeopleMyZeil-3_retouch.png`
+
+## Keeping the site out of search results
+
+Both pages carry `<meta name="robots" content="noindex, nofollow">`, emitted
+from the `NOINDEX` flag at the top of `build/build.py`. The site is publicly
+reachable, it just should not turn up in search results.
+
+`robots.txt` deliberately *allows* crawling. A crawler has to fetch a page to
+see its `noindex`, so blocking with `Disallow: /` would hide the instruction
+and could leave a bare URL indexed anyway.
+
+To go live in search results:
+
+1. Set `NOINDEX = False` in `build/build.py`
+2. Run `python build/build.py`
+3. Delete `robots.txt`
+4. Commit and push
 
 ## Local preview
 
