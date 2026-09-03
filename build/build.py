@@ -99,8 +99,17 @@ def paper_html(p):
     )
 
 
-def section(sid, heading, items):
-    body = "".join(paper_html(p) for p in items)
+def section(sid, heading, items, ordered=False):
+    if ordered:
+        # <ol reversed> numbers the oldest paper 1 and the newest highest,
+        # while the list still reads newest first down the page
+        inner = "".join(
+            '\n        <li>%s\n        </li>'
+            % paper_html(p).replace("\n      ", "\n          ")
+            for p in items)
+        body = '\n      <ol reversed class="paper-list">%s\n      </ol>' % inner
+    else:
+        body = "".join(paper_html(p) for p in items)
     return ('\n    <section id="%s">'
             '\n      <h2>%s</h2>%s'
             '\n    </section>' % (sid, e(heading), body))
@@ -187,7 +196,7 @@ def build_index():
     parts.append(SIDEBAR)
     parts.append('  <main id="main" class="content">\n')
     parts.append(section("current-research", "Current Research", WORKING))
-    parts.append(section("publications", "Publications", PUBLICATIONS))
+    parts.append(section("publications", "Publications", PUBLICATIONS, ordered=True))
     parts.append(section("resting-papers", "Resting Papers", RESTING))
     parts.append(FOOT.format(year=2026))
     return "".join(parts)

@@ -21,7 +21,8 @@ P = {
 
 WORKING = [
     dict(key="binary-bias", title="Binary Bias and Stock Returns",
-         authors=[("Felix Fattinger", None), ("Borys Koval", None), ("Alina Steshkova", None)]),
+         authors=[("Felix Fattinger", None), ("Borys Koval", None), ("Alina Steshkova", None)],
+         presentations="Helsinki Finance 2026, Finance Research Revolution (FRR) Conference 2026"),
     dict(key="gamblers", title="Do Gamblers Invest in Lottery Stocks?",
          url=SSRN + "4307554",
          authors=[("Emily Kormanyos", P["kormanyos"]), ("Andreas Hackethal", P["hackethal"])],
