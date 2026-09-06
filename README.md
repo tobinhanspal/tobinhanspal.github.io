@@ -66,6 +66,21 @@ and rerun `python build/build.py`, or edit the two HTML files directly.
 
 Source file: `Dropbox/Personal/ProPhoto_2018/PicturePeopleMyZeil-3_retouch.png`
 
+## Analytics
+
+GoatCounter, added as one async script in the shared footer template in
+`build/build.py`. It sets no cookies and collects no personal data, so no
+consent banner is required, which matters given the Austrian DSB's ruling
+against Google Analytics.
+
+Dashboard: https://tobinhanspal.goatcounter.com/
+
+There is no native mobile app. Open the dashboard in Safari or Chrome and use
+"Add to Home Screen" for an app-like icon.
+
+To remove analytics, delete the script block from `FOOT` in `build/build.py`
+and rerun the build. The site then ships no JavaScript at all.
+
 ## Keeping the site out of search results
 
 Both pages carry `<meta name="robots" content="noindex, nofollow">`, emitted

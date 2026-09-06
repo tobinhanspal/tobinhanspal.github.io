@@ -188,6 +188,9 @@ FOOT = """  </main>
 <footer class="site-footer">
   <div class="wrapper"><small>&copy; {year} Tobin Hanspal</small></div>
 </footer>
+<!-- GoatCounter: cookieless pageview counts, no consent banner required. -->
+<script data-goatcounter="https://tobinhanspal.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
 """
