@@ -44,14 +44,13 @@ This rewrites `index.html` and `survey.html`. A paper with no matching key in
 
 ## Abstracts still to add
 
-Three papers have no abstract on file, so they currently render
+Two papers have no abstract on file, so they currently render
 without a toggle. To add one, put the text in `build/abstracts.json` under the
 listed key and set that key on the paper in `build/papers.py`, then rebuild.
 
 | Paper | Suggested key |
 | --- | --- |
 | Do Financial Misconduct Experiences Spur White-Collar Crime? | `misconduct` |
-| Political Corruption, Trust, and Household Stock Market Participation | `corruption` |
 | Does Financial Technology Affect Household Savings Behavior? | `fintech-savings` |
 
 ## Portrait
