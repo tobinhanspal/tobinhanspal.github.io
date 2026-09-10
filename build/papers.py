@@ -20,6 +20,8 @@ P = {
 }
 
 WORKING = [
+    dict(key="rebuying-dip", title="Rebuying the Dip",
+         authors=[]),
     dict(key="binary-bias", title="Binary Bias and Stock Returns",
          authors=[("Felix Fattinger", None), ("Borys Koval", None), ("Alina Steshkova", None)],
          presentations="Helsinki Finance 2026, Finance Research Revolution (FRR) Conference 2026"),
